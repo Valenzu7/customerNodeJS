@@ -1,0 +1,20 @@
+p Mi nombre es #{nombre}
+		-var miArray=[5,2,3]
+		-for(var i=0;i<miArray.length;i++){
+			p= miArray[i]
+		-}
+		for a in miArray
+			p= a
+		each a in miArray
+			p= a
+		for a in miArray
+			p!= "<h3>"+a+"</h3>"
+			//-Con =! usa bien los h3
+		//-algo.esto es un comentario en el lado del servidor
+		//algo.esto es un comentario en el lado del cliente <!-- algo -->
+		a(href="http://www.google.es") ir a google
+		br
+		a(href="nombre") ir a mi nombre
+		br
+		p.
+			haz click en #[a(href="http://www.google.es") este enlace] gracias

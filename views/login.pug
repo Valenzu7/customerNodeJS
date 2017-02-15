@@ -1,0 +1,14 @@
+extends ./layout.pug
+block contenido
+	h1 Página de login
+	form(action="/login", method="POST")
+		div(class="form-group")
+			label(fot="email") Email  
+			input(type="text", name="email", class="form-control")
+
+		div(class="form-group")
+			label(fot="password") Password
+			input(type="password", name="password", class="form-control")
+
+		div(class="form-group")
+			input(type="submit", name="Loguear", class="btn btn-info")
